@@ -1,0 +1,7 @@
+{
+  "extension": ["ts"],
+  "require": "ts-node/register",
+  "reporter": "spec",
+  "timeout": false,
+  "watch-files": ["tests/**/*.ts"]
+}
