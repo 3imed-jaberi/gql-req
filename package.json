@@ -1,0 +1,20 @@
+{
+  "name": "gql-req",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3imed-jaberi/gql-req.git"
+  },
+  "keywords": [],
+  "author": "Imed Jaberi (https://www.3imed-jaberi.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/3imed-jaberi/gql-req/issues"
+  },
+  "homepage": "https://github.com/3imed-jaberi/gql-req#readme"
+}
