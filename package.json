@@ -2,8 +2,14 @@
   "name": "gql-req",
   "version": "0.1.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
+    "size": "bundlesize --config bundlesize.config.json",
+    "build": "rm -rf dist && tsc -d",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -11,10 +17,17 @@
     "url": "git+https://github.com/3imed-jaberi/gql-req.git"
   },
   "keywords": [],
-  "author": "Imed Jaberi (https://www.3imed-jaberi.com/)",
+  "author": {
+    "name": "imed jaberi",
+    "email": "3imed.jaberi@gmail.com",
+    "url": "https://www.3imed-jaberi.com"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/3imed-jaberi/gql-req/issues"
   },
-  "homepage": "https://github.com/3imed-jaberi/gql-req#readme"
+  "homepage": "https://github.com/3imed-jaberi/gql-req#readme",
+  "devDependencies": {
+    "bundlesize": "^0.18.0"
+  }
 }
