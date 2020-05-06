@@ -1,34 +1,47 @@
 {
   "name": "gql-req",
-  "version": "0.1.0",
-  "description": "",
+  "version": "1.0.0-rc",
+  "description": "✨ Minimal and ultra Lightweight GraphQL client (lighter then `graphql-request` ⚡️) that supports Node and browsers for scripts or simple apps 🚀.",
   "main": "dist/index.js",
   "typings": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
-    "size": "bundlesize --config bundlesize.config.json",
-    "build": "rm -rf dist && tsc -d",
     "test": "mocha tests/**/*.spec.ts",
     "coverage": "nyc npm run test",
+    "size": "bundlesize --config bundlesize.config.json",
+    "build": "rimraf dist && tsc -d",
     "ci": "npm run build && npm run coverage && npm run size"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/3imed-jaberi/gql-req.git"
   },
-  "keywords": [],
+  "keywords": [
+    "graphql",
+    "gql",
+    "request",
+    "req",
+    "graphql-request",
+    "graphql-client",
+    "axios",
+    "GET",
+    "POST",
+    "simple",
+    "lightweight",
+    "prisma",
+    "apollo"
+  ],
   "author": {
     "name": "imed jaberi",
     "email": "3imed.jaberi@gmail.com",
     "url": "https://www.3imed-jaberi.com"
   },
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/3imed-jaberi/gql-req/issues"
+  "dependencies": {
+    "axios": "^0.19.2"
   },
-  "homepage": "https://github.com/3imed-jaberi/gql-req#readme",
   "devDependencies": {
     "@types/chai": "^4.2.11",
     "@types/mocha": "^7.0.2",
@@ -37,7 +50,12 @@
     "chai": "^4.2.0",
     "mocha": "^7.1.2",
     "nyc": "^15.0.1",
+    "rimraf": "^3.0.2",
     "ts-node": "^8.10.1",
     "typescript": "^3.8.3"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/3imed-jaberi/gql-req/issues"
+  },
+  "homepage": "https://github.com/3imed-jaberi/gql-req#readme"
 }
