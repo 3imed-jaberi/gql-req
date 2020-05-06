@@ -1,0 +1,14 @@
+{
+  "all": false,
+  "extension": [
+    ".ts"
+  ],
+  "reporter": [
+    "clover",
+    "lcov",
+    "lcovonly",
+    "json"
+  ],
+  "report-dir": "./coverage",
+  "temp-dir": "./.nyc_output"
+}
