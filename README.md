@@ -51,8 +51,8 @@ Minimal and ultra Lightweight GraphQL client <small>(lighter then `graphql-reque
 ## Limitation
 
 - 🚧 No front-end integration.
-- 🚧 Cache System.
-- 🚧 Subscription aka WS <small>(WebSocket)</small> support.
+- 🚧 No Cache System.
+- 🚧 No Subscription aka WS <small>(WebSocket)</small> support.
 
 
 ## `Installation`
@@ -77,8 +77,7 @@ The [Options type](https://github.com/3imed-jaberi/gql-req/blob/master/src/index
 
   - `method` &mdash; http method used to connect with graphql server <small>('GET'/'POST', 'POST' as default)</small>.         
   - `headers` &mdash; key-value object that definite the headers. 
-  - `pureDataResponse` &mdash; Unlike graphql-request, I have found __*rawRequest*__ method and __*Request*__ <br/> 
-  method are same, for that this option was created. if this option is `true`, the result is equal to `Request` result <small>(`false` as default)</small>.
+  - `pureDataResponse` &mdash; Unlike graphql-request, I have found __*rawRequest*__ method and __*Request*__ <br/> method are same, for that this option was created. if this option is `true`, the result is equal <br/> to `Request` result <small>(`false` as default)</small>.
 
 
 ## `Usage`
