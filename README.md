@@ -33,13 +33,13 @@
 [pr-url]: https://github.com/3imed-jaberi/gql-req
 
 
-Minimal and ultra Lightweight GraphQL client <small>(lighter then `graphql-request`)<small> that supports Node and browsers for scripts or simple apps. 
+✨ Minimal and ultra Lightweight GraphQL client <small>(lighter then `graphql-request` ⚡️)<small> that supports Node and browsers for scripts or simple apps 🚀. 
 
-**This is an attempt to revive `graphql-request` ❤️.**
+**This is an attempt to revive [`graphql-request`](https://github.com/prisma-labs/graphql-request) ❤️.**
 
-## Features
+## `Features`
 
-- 🦄 Inspired from [`graphql-request`](https://github.com/prisma-labs/graphql-request) (with almost identical interface).
+- 🦄 Inspired from `graphql-request` (with almost identical interface).
 - 🔥 Most **simple and lightweight** GraphQL client <small>(Lighter then `graphql-request`)<small>.
 - ⚖️ Tiny Bundle: 1.515 kB (gzip)
 - 📌 Promise-based API (works with `async` / `await`).
@@ -48,7 +48,7 @@ Minimal and ultra Lightweight GraphQL client <small>(lighter then `graphql-reque
 - 🎉 Typescript support.
 
 
-## Limitation
+## `Limitation`
 
 - 🚧 No front-end integration.
 - 🚧 No Cache System.
@@ -96,9 +96,10 @@ const client = new GraphQLClient(endpoint, { headers: {} });
 client.request(query, variables).then(data => console.log(data));
 ```
 
+<!-- > You can play around with it on this sandbox [codesandbox.io/gql-req](link). -->
+
 
 ## `FAQ`
-
 
 ### Why `gql-req` over graphql-request?
 
@@ -114,3 +115,8 @@ Compared to GraphQL clients like Apollo or Relay, `gql-req` doesn't have a built
 
 Lokka is great but it still requires [a lot of setup code](https://github.com/kadirahq/lokka-transport-http) to be able to send a simple GraphQL query. `gql-req` does less work compared to Lokka but is a lot simpler to use.
 
+
+#### License
+---
+
+[MIT](LICENSE)
