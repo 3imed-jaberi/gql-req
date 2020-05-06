@@ -93,7 +93,7 @@ class GraphQLClient {
   public async request<T extends any>(query: string, variables?: Variables): Promise<T> {
     try {
       const { headers, method, pureDataResponse, ...others } = this.options
-      const isPostReq = this.options.method === 'POST'
+      const isPostReq = method === 'POST'
       const response = await axios({
         url: isPostReq ? this.url : this.getUrlForGetReq(query, variables),
         method: method,
@@ -111,13 +111,13 @@ class GraphQLClient {
     }
   }
 
-  public setHeaders(headersArg: Headers | string, value?: string): GraphQLClient {
+  public setHeaders(headersOrKey: Headers | string, value?: string): GraphQLClient {
     this.options.headers = (
-      typeof headersArg === 'string'
+      typeof headersOrKey === 'string'
       ?
-      { ...this.options.headers, [headersArg]: value } as Headers
+      { ...this.options.headers, [headersOrKey]: value } as Headers
       :
-      { ...this.options.headers, ...headersArg }
+      { ...this.options.headers, ...headersOrKey }
     )
 
     return this
