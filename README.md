@@ -96,7 +96,7 @@ const client = new GraphQLClient(endpoint, { headers: {} });
 client.request(query, variables).then(data => console.log(data));
 ```
 
-<!-- > You can play around with it on this sandbox [codesandbox.io/gql-req](link). -->
+> You can play around with it on this sandbox example [codesandbox.io/gql-req](https://codesandbox.io/s/gql-req-8lkig).
 
 
 ## `FAQ`
