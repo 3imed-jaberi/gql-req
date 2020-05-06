@@ -3,7 +3,7 @@
 **This is an attempt to revive `graphql-request` ❤️.**
 
 
-### v1.0.0-rc (6 Mai 2020)
+### v1.0.0 (6 Mai 2020)
   - remove all duplicated code.
   - add more options.
   - isomorphic with `Axios` over `fetch polyfill`.
@@ -11,3 +11,4 @@
   - combine the 2 headers methods.
   - support queries under `GET` method.
   - lighter than `graphql-request`.
+  - add sandbox code example.
