@@ -1,6 +1,6 @@
 {
   "name": "gql-req",
-  "version": "1.0.0-rc",
+  "version": "1.0.0",
   "description": "✨ Minimal and ultra Lightweight GraphQL client (lighter then `graphql-request` ⚡️) that supports Node and browsers for scripts or simple apps 🚀.",
   "main": "dist/index.js",
   "typings": "./dist/index.d.ts",
